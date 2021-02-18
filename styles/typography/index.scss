@@ -1,0 +1,20 @@
+/* Typography
+   ========================================================================== */
+
+   :root {
+    --first-font-family: 'Montserrat', sans-serif;
+    --second-font-family: 'Kaushan Script', cursive;
+  }
+  
+  p {
+   font-family: var(--first-font-family);
+  }
+  a {
+    font-family: var(--first-font-family);
+  }
+  h1, h2 {
+    font-family: var(--second-font-family);
+  }
+  h3, h4, h5{
+    font-family: var(--first-font-family);
+  }
