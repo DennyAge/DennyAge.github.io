@@ -12,35 +12,38 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="menu">
-                <div class="logo">
-                    <a href="#home-page">DA</a>
+            <div class="header__body">
+                <a class="logo" href="#home-page">DA</a>
+                <div class="header__burger">
+                    <span></span>
                 </div>
-                <ul class="menu__nav">
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#experience">experience</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#experience">experience</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
     </header>
-    <main class="page">
+    <main class="page"> 
         <section class="home-page" id="home-page">
-            <video class="bg_video" src="/image/150355060660c38c0de784a9f4.mp4" autoplay muted loop></video>
+            
             <div class="container">
                 <div class="home-page__content">
-                    <div class="photo__img">
+                    <div class="photo__img _anim-items _anim-no-hide">
                         <img src="/image/photo.jpg" alt="">
                     </div>
-                    <div class="home-page__title">
-                        <h1>Denys Aheienko</h1>
+                    <div class="home-page__title _anim-items _anim-no-hide">
+                        <h1 class="">Denys Aheienko</h1>
                         <h2>Front-End Developer</h2>
                     </div>
                     <div class="home-page__btn">
-                        <div class="btn"><a href="">Hire Me</a></div>
+                        <div class="btn"><a href="#contact">Hire Me</a></div>
                         <div class="btn"><a href="">Download CV</a></div>   
                     </div>
                 </div>
@@ -72,18 +75,16 @@
                 </div>
             </div>
         </section>
-        <section class="about" id="about">
+        <section class="about _anim-items _anim-no-hide" id="about">
             <div class="container">
-                <div class="columns">
-                    <div class="col-6">
-                        <h3>About Me</h3>
+                <div class="about__contant columns">
+                    <div class="about__text col-6 ">
                         <p>Hello! I am Denys Aheienko. Web Developer, Graphic Designer and Photographer.</p>
                         <p>Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience.</p>
-                        <a href="">Learn More</a>
                     </div>
-                    <div class="col-6">
+                    <div class="about__text col-6">
                         <h3>Basic Information</h3>
-                        <div class="info">
+                        <div class="about-text_info">
                             <div>
                                 <h5>AGE:</h5>
                                 <h5>EMAIL:</h5>
@@ -105,116 +106,134 @@
         </section>
         <section class="skills" id="skills">
             <div class="container">
-                <div class="skills__title">
+                <div class="skills__title _anim-items _anim-no-hide">
                     <h3>Professional Skills</h3>
                 </div>
-                <div class="columns">
-                    <div class="col-6">
-                        <div class="text">
-                            <div><h5>HTML</h5></div>
-                            <div><h5>80%</h5></div>
+                <div class="skills__bars columns _anim-items _anim-no-hide">
+                    <div class="bar col-6 _anim-items">
+                        <div class="info">
+                            <span>HTML</span>     
                         </div>
-                        <div class="text">
-                            <div><h5>JAVASCRIPT</h5></div>
-                            <div><h5>60%</h5></div>
+                        <div class="progres-line _anim-items html">
+                            <span></span>
                         </div>
-                        <div class="text">
-                            <div><h5>BOOTSTRAP</h5></div>
-                            <div><h5>75%</h5></div>
+                        <div class="info">
+                            <span>CSS</span>     
+                        </div>
+                        <div class="progres-line _anim-items css">
+                            <span></span>
+                        </div>
+                        <div class="info">
+                            <span>SASS</span>     
+                        </div>
+                        <div class="progres-line _anim-items sass">
+                            <span></span>
                         </div>
                     </div> 
-                    <div class="col-6">
-                        <div class="text text_2">
-                            <div><h5>CSS</h5></div>
-                            <div><h5>75%</h5></div>
+                    <div class="bar col-6 _anim-items">
+                        <div class="info">
+                            <span>JAVA SCRIPT</span>     
                         </div>
-                        <div class="text text_2">
-                            <div><h5>SASS</h5></div>
-                            <div><h5>60%</h5></div>
+                        <div class="progres-line javascript">
+                            <span></span>
                         </div>
-                        <div class="text text_2">
-                            <div><h5>PHOTOSHOP</h5></div>
-                            <div><h5>70%</h5></div>
+                        <div class="info">
+                            <span>jQUERY</span>     
                         </div>
-                    </div>    
+                        <div class="progres-line jquery">
+                            <span></span>
+                        </div>
+                        <div class="info">
+                            <span>REACT</span>     
+                        </div>
+                        <div class="progres-line react">
+                            <span></span>
+                        </div>
+                    </div> 
                 </div>        
             </div>
         </section>
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio" id="portfolio" >
             <div class="container">
-                <div class="portfolio__title">
+                <div class="portfolio__title _anim-items _anim-no-hide">
                     <h3>Portfolio</h3>
                 </div>
-                <div class="columns">
-                    <div class="col-5">
-                         <img src="/image/PF1.jpg" alt="">
-                         <div class="content">
-                             <h2>Hello</h2>
-                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem aspernatur molestias vel commodi repudiandae quod veniam enim praesentium minima, maiores quibusdam, labore, tempore recusandae!</p>
-                             <a href="">Learn More</a>
-                         </div>
+                <div class="portfolio__contant columns _anim-items _anim-no-hide">
+                    <div class="contant__item col-5 ">
+                        <a target="_blank" href="http://concept-hall.com/"> 
+                            <img src="/image/concept_hall.png" alt="">
+                        </a>
                     </div>
-                    <div class="col-5">
-                        <img src="/image/PF4.jpg" alt="">
-                        <div class="content">
-                            <h2>Hello</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem aspernatur molestias vel commodi repudiandae quod veniam enim praesentium minima, maiores quibusdam, labore, tempore recusandae!</p>
-                            <a href="">Learn More</a>
-                        </div>
+                    <div class="contant__item col-5">
+                        <a target="_blank" href="https://www.krohin.com.ua/">
+                            <img src="/image/doctor.png" alt="">
+                        </a>
                     </div>
-                    <div class="col-5">
-                        <img src="/image/PF2.jpg" alt="">
-                        <div class="content">
-                            <h2>Hello</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem aspernatur molestias vel commodi repudiandae quod veniam enim praesentium minima, maiores quibusdam, labore, tempore recusandae!</p>
-                            <a href="">Learn More</a>
-                        </div>
+                    <div class="contant__item col-5">
+                        <a target="_blank" href="http://enrico.dp.ua/">
+                            <img src="/image/enriko.png" alt="">
+                        </a>  
                     </div>
-                    <div class="col-5">
-                        <img src="/image/PF3.jpg" alt="">
-                        <div class="content">
-                            <h2>Hello</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem aspernatur molestias vel commodi repudiandae quod veniam enim praesentium minima, maiores quibusdam, labore, tempore recusandae!</p>
-                            <a href="">Learn More</a>
-                        </div>
+                    <div class="contant__item col-5">
+                         <a target="_blank" href="https://bezshuma.com.ua/">
+                            <img src="/image/specstroi.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contant__item col-5">
+
+                        <a target="_blank" href="https://stepinkyiv.com.ua/">
+                            <img src="/image/stap_in_kiev.png" alt="">
+                        </a>    
+                    </div>
+                    <div class="contant__item col-5">
+                         <a target="_blank" href="https://www.pitstop.dp.ua/">
+                             <img src="/image/sto.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="experience" id="experience">
             <div class="container">
-                <div class="experience__title">
+                <div class="experience__title _anim-items _anim-no-hide">
                     <h3>Work Experience</h3>
                 </div>
-                <div class="column_n">
-                    <div class="col-10">
-                        <div class="col-3">
-                            <h5>MARCH 2016 - PRESENT</h5>
-                            <h3>CREATIVEM</h3>
+                <div class="experience__contant column_n _anim-items _anim-no-hide">
+                    <div class="contant__item-1 col-11">
+                        <div class="contant__item-2 col-3 ">
+                            <h5>MARCH 2020 - PRESENT</h5>
+                            <h3><a target="_blank" href="https://enlight.studio/">ENGLIHT STUDIO</a></h3>
                         </div>
-                        <div class="col-9">
+                        <div class="contant__item-3 col-9">
                             <h3>Front End Developer</h3>
-                            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+                            <p>Tasks:</p>
+                            <ul>
+                                <li>- Web development</li>
+                                <li>- Webcoding PSD, Figma to HTML</li>
+                                <li>- Design, implementation and editing of web pages.</li>
+                                <li>- Landing site on WordPress</li>
+                            </ul>
+                                
+                                <p>Technology:</p>
+                                <p>JavaScript, JQuery, WordPress, HTML / HTML5, CSS / CSS3 /SASS /  Gulp / Git</p>
                         </div>
                     </div>
-                    <div class="col-10">
-                        <div class="col-3">
-                            <h5>APRIL 2014 - MARCH 2016</h5>
-                            <h3>WEBNOTE</h3>
+                    <div class="contant__item-1 col-11">
+                        <div class="contant__item-2 col-3">
+                            <h5>DECEMBER 2019 - MARCH 2020</h5>
+                            <h3>FRILANCE</h3>
                         </div>
-                        <div class="col-9">
+                        <div class="contant__item-3 col-9">
                             <h3>Web Developer</h3>
-                            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-                        </div>
-                    </div>
-                    <div class="col-10">
-                        <div class="col-3">
-                            <h5>APRIL 2013 - FEBRUARY 2014</h5>
-                            <h3>WEBM</h3>
-                        </div>
-                        <div class="col-9">
-                            <h3>Intern</h3>
-                            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+                            <p>Tasks:</p>
+                            <ul>
+                                <li>- Web development</li>
+                                <li>- Webcoding PSD, Figma to HTML</li>
+                                <li>- Design, implementation and editing of web pages.</li>
+                            </ul>
+                                
+                                <p>Technology:</p>
+                                <p>HTML / HTML5, CSS / CSS3 /SASS /  Gulp / Git</p>
                         </div>
                     </div>
                 </div>
@@ -222,41 +241,23 @@
         </section>
         <section class="education">
             <div class="container">
-                <div class="education__title">
+                <div class="education__title _anim-items _anim-no-hide">
                     <h3>Education</h3>
                 </div>
-                <div class="column_n">
-                    <div class="col-10">
-                        <div class="col-3">
-                            <h5>2013 - 2015</h5>
-                            <h3>Master's Degree</h3>
+                <div class="education__contant column_n _anim-items _anim-no-hide">
+                    <div class="contant__item-1 col-11">
+                        <div class="contant__item-2 col-3">
+                            <h5>2021</h5>
+                            <h3>JavaScript</h3>
                         </div>
-                        <div class="col-9">
-                            <h3>Master of Information Technology</h3>
-                            <h4>UNIVERSITY OF COMPUTER SCIENCE</h4>
-                            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-                        </div>
-                    </div>
-                    <div class="col-10">
-                        <div class="col-3">
-                            <h5>2009 - 2013</h5>
-                            <h3>Bachelor's Degree</h3>
-                        </div>
-                        <div class="col-9">
-                            <h3>Web Developer</h3>
-                            <h4>UNIVERSITY OF COMPUTER SCIENCE</h4>
-                            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-                        </div>
-                    </div>
-                    <div class="col-10">
-                        <div class="col-3">
-                            <h5>2007 - 2009</h5>
-                            <h3>High School</h3>
-                        </div>
-                        <div class="col-9">
-                            <h3>Intern</h3>
-                            <h4>SCHOOL OF SECONDARY BOARD</h4>
-                            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+                        <div class="contant__item-3 col-9">
+                            <a target="_blank" href="https://www.udemy.com/course/the-complete-javascript-course/"><h3>The Complete JavaScript Course 2021: From Zero to Expert!</h3></a>
+                            <h4>UDEMY</h4>
+                            <p>*** The #1 bestselling JavaScript course on Udemy! ***</p>
+
+                            <p>*** Completely re-built from scratch in October 2020 (65 hours video) ***</p>
+
+                            <p>The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!</p>
                         </div>
                     </div>
                 </div>
@@ -264,32 +265,50 @@
         </section>
         <section class="references">
             <div class="container">
-                <div class="references__title">
+                <div class="references__title _anim-items _anim-no-hide">
                     <h3>References</h3>
                 </div>
-                <div class="columns">
-                    <div class="col-2">
-                    <img src="/image/reference-image-2.jpg" alt="">
-                    <h4>Alexander</h4>
-                    <h5>CEO / WEBNOTE</h5>
-                    </div>
-                    <div class="col-10">
-                    <p>Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-                    <div class="btn_comit">
-                        <a href=""><i></i></a>
-                        <a href=""><i></i></a>
-                        <a href=""><i></i></a>
-                    </div>
-                    </div>
+                <div class="slider columns _anim-items _anim-no-hide">
+                  <div class="slider-contant">
+                    <div class="slider-contant__item-1 col-2">
+                        <img src="/image/reference-image-1.jpg" alt="">
+                        <h4>Alexander</h4>
+                        <h5>CEO / WEBNOTE</h5>
+                        </div>
+                        <div class="slider-contant__item-2 col-10">
+                        <p>Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+                        </div>
+                  </div>
+                  <div class="slider-contant">
+                    <div class="slider-contant__item-1 col-2">
+                        <img src="/image/reference-image-2.jpg" alt="">
+                        <h4>Alexander</h4>
+                        <h5>CEO / WEBNOTE</h5>
+                        </div>
+                        <div class="slider-contant__item-2 col-10">
+                        <p>Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+                        </div>
+                  </div>
+                  <div class="slider-contant">
+                    <div class="slider-contant__item-1 col-2">
+                        <img src="/image/reference-image-3.jpg" alt="">
+                        <h4>Alexander</h4>
+                        <h5>CEO / WEBNOTE</h5>
+                        </div>
+                        <div class="slider-contant__item-2 col-10">
+                        <p>Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+                        </div>
+                  </div>
                 </div>
+
             </div>
         </section>
         <section class="contact" id="contact">
           <div class="container">
-              <div class="contact__iner">
+              <div class="contact__iner _anim-items _anim-no-hide">
                     <h3>Contact Me</h3>
-                <div class="columns">
-                <div class="col-5">
+                <div class="contact-contant columns">
+                <div class="contact-contant__item col-5">
                   <div class="contact__form">
                       <form action="#" name="newform" method="get">
                         <div class="form__input">
@@ -304,7 +323,7 @@
                       </form>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="contact-contant__item col-5">
                     <h5>Address</h5>
                     <p>Dnipro, Ukraine</p>
                     <h5>Phone</h5>
@@ -324,12 +343,14 @@
                     <a class="icon-github" href="https://github.com/DennyAge" target="_blank"></a>
                     <a class="icon-linkedin" href="https://www.linkedin.com/in/%D0%B4%D0%B5%D0%BD%D0%B8%D1%81-%D0%B0%D0%B3%D0%B5%D0%B5%D0%BD%D0%BA%D0%BE-863100206/" target="_blank"></a>
                 </div>
-                <div class="footer__title">
+                <div class="footer__title _anim-items _anim-no-hide">
                     <h1>Denys Aheienko</h1>
                 </div>
             </div>
         </footer>
     </main>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/slick.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

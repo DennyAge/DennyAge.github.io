@@ -6,6 +6,15 @@
   --header-height: 110px;
   --footer-height: 430px;
   --main-block-height: calc(100vh - var(--header-height) - var(--footer-height));
-  --footer-bg-color: 
-    --header-bg-color:
-; }
+  --first-bg-color: #6baec1;
+  --white-color: #fff;
+  --black-color: #000;
+  --grey-color: #8a8888;
+  --first-text-color: ;
+  --second-text-color: ;
+  --hover-color: rgb(12, 209, 209);
+  --shadow-color: #dddcdc;
+  --fb-color: #1877f7;
+  --inst-color: #e60074;
+  --lin-color: #0966c2;
+  --git-color: #080808; }
